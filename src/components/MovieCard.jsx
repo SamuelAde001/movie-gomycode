@@ -1,21 +1,43 @@
 import React from "react";
-import { Card, Space } from "antd";
+import { Card, ConfigProvider, Space } from "antd";
 const { Meta } = Card;
 import { Rate } from "antd";
 export const MovieCard = ({ m }) => (
-  <Card
-    className="bg-[#FAF5E9]"
-    hoverable
-    style={{
-      width: 240,
-      height: "max-content",
-      background: "",
-      boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-    }}
-    cover={<img alt="example" src={m.posterURL} className="h-[300px]" />}
-  >
-    <Meta title={m.title} description={m.description.slice(0, 100)} />
-
-    <Rate disabled defaultValue={m.rating} className="mt-5 bg-[] p-4" />
-  </Card>
+  <>
+    {/* config provider is for the card style configoration on ant design */}
+    <ConfigProvider
+      theme={{
+        token: {
+          colorText: "White",
+        },
+      }}
+    >
+      <Card
+        className="hover:translate-y-4 transition duration-200 ease-in-out"
+        style={{
+          width: "auto",
+        }}
+        size="small"
+        bordered={false}
+        bodyStyle={{ background: "#2C3E50", height: "100px" }}
+        type="inner"
+        hoverable
+        cover={
+          <img
+            alt="example"
+            src={m.posterURL}
+            style={{
+              width: "100%",
+              height: "200px",
+              objectFit: "cover",
+            }}
+          />
+        }
+      >
+        {/* Meta details */}
+        <Meta title={m.title} />
+        <Rate disabled defaultValue={m.rating} allowHalf className="mt-5 p-4" />
+      </Card>
+    </ConfigProvider>
+  </>
 );

@@ -100,7 +100,6 @@ export const AddMovie = ({ setMyMovies, setRandom, memorizedMovies }) => {
         type="primary"
         icon={<VideoCameraAddOutlined />}
         onClick={showModal}
-        className="bg-custGreen"
       >
         Add new Movie
       </Button>
@@ -114,12 +113,15 @@ export const AddMovie = ({ setMyMovies, setRandom, memorizedMovies }) => {
         <Input
           rows={4}
           id="title"
+          placeholder="Title of movie"
+          addonBefore="Title"
           onChange={handleInput}
           value={movieInfo.title}
         />
         <br />
         <Input.TextArea
           rows={4}
+          placeholder="Movie description"
           id="description"
           onChange={handleInput}
           value={movieInfo.description}
@@ -129,6 +131,8 @@ export const AddMovie = ({ setMyMovies, setRandom, memorizedMovies }) => {
           rows={4}
           label="ImageUrl"
           id="posterURL"
+          addonBefore="Image url"
+          placeholder="Movie video URL"
           onChange={handleInput}
           value={movieInfo.posterURL}
         />

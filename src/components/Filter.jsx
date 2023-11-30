@@ -30,8 +30,8 @@ export const Filter = ({
         placeholder="Search for movie"
         allowClear
         size="large"
-        className="bg-custGreen"
         onSearch={(value) => filterBySearch(value)}
+        enterButton
       />
       <Select
         defaultValue="Ratings"

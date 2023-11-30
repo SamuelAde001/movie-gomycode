@@ -12,17 +12,22 @@
 /* Green (#009B4D), tangerine yellow (#FFCC00), ivory (#FAF5E9) */
 body {
   color: #faf5e9;
-  background-image: url(/public/pexels-mohamed-sarim-1033729.jpg);
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/c906271d-7184-4eec-83c9-b6d4c1a068ec/06e2a97d-de99-4a4e-8b66-a6ed28126aec/NG-en-20231127-popsignuptwoweeks-perspective_alpha_website_large.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 #root {
-  background: #009b4e62;
+  background: #000000ad;
   padding-bottom: 100px;
 }
 .main--title {
   font-family: "Vina Sans", sans-serif !important;
   font-weight: 900;
+}
+
+button {
+  background: rgb(0, 52, 129) !important;
+  color: white !important;
 }

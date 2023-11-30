@@ -1,47 +1,52 @@
 export const movies = [
   {
     ID: 1,
-    title: "THE HUNGER GAMES: THE BALLAD OF SONGBIRDS & SNAKES (2023)",
-    description:
-      "Various interconnected stories of crime, redemption, and the bizarre.",
+    title: "Wakanda Forever",
+    description: `Queen Ramonda (Angela Bassett), Shuri (Letitia Wright), M’Baku (Winston Duke), Okoye (Danai Gurira) and the Dora Milaje (including Florence Kasumba), fight to protect their nation from intervening world powers in the wake of King T’Challa’s death. As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia (Lupita Nyong’o) and Everett Ross (Martin Freeman) and forge a new path for the kingdom of Wakanda.`,
     posterURL:
-      "https://resizing.flixster.com/ELzEGuXyU443d5jXoJqzl5CF57k=/fit-in/180x240/v2/https://resizing.flixster.com/cli2xj07iMBQ-KDgwpiVxGPlt0I=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2I4MDI3YjY5LTY1OGEtNDgzYi1iMzIxLWE1MWRkMTdlMzU1Ni5qcGc=",
+      "https://cdn.marvel.com/content/1x/blackpantherwakandaforever_lob_crd_06.jpg",
     rating: 1,
+    trailer:
+      "https://www.youtube.com/embed/_Z3QKkl1WyM?si=hLltyQ5hB7lUiQix&amp;controls=0",
   },
+
   {
     ID: 2,
-    title: "THE MARVELS (2023)",
+    title: "Quantumania",
     description:
-      "Various interconnected stories of crime, redemption, and the bizarre.",
+      "In the film, which officially kicks off phase 5 of the Marvel Cinematic Universe, Super-Hero partners Scott Lang and Hope Van Dyne return to continue their adventures as Ant-Man and the Wasp. Together, with Hope's parents Hank Pym and Janet Van Dyne, the family finds themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought was possible. Jonathan Majors joins the adventure as Kang.",
     posterURL:
-      "https://resizing.flixster.com/VYqNlHSBUhza9xSYF0TCGinJRao=/fit-in/180x240/v2/https://resizing.flixster.com/Ht14zArBc90eTF1dMAaQynKk2Ic=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2NhNjNhOGQ1LWE5Y2YtNDFlZS1iNDk0LWQyZGMyZTlhYmVmOS5qcGc=",
+      "https://cdn.marvel.com/content/1x/antmanandthewaspquantumania_lob_crd_03.jpg",
     rating: 2,
+    trailer: "https://www.youtube.com/embed/ZlNFpri-Y40?si=CwXkjA8Uznnn4_wY",
   },
   {
     ID: 3,
-    title: "THANKSGIVING (2023)",
-    description:
-      "Various interconnected stories of crime, redemption, and the bizarre.",
+    title: "Thor: Love and Thunder",
+    description: `Marvel Studios’ “Thor: Love and Thunder” finds the God of Thunder on a journey unlike anything he’s ever faced—one of self-discovery. But his efforts are interrupted by a galactic killer known as Gorr the God Butcher, who seeks the extinction of the gods. To combat the threat, Thor enlists the help of King Valkyrie, Korg and ex-girlfriend Jane Foster, who—to Thor’s surprise—inexplicably wields his magical hammer, Mjolnir, as the Mighty Thor.`,
     posterURL:
-      "https://resizing.flixster.com/sCnMImlfhDaclx4j96Uj-AKQC8o=/fit-in/180x240/v2/https://resizing.flixster.com/H5CIRmSezlafOc8Fte3v2PNGr1M=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzNjN2ZiOTBmLTczODctNGU1MS05NGUyLTRmZThjZDk1ZGVkMC5qcGc=",
+      "https://cdn.marvel.com/content/1x/thorloveandthunder_lob_crd_04.jpg",
     rating: 3,
+    trailer: "https://www.youtube.com/embed/tgB1wUcmbbw?si=lGgxC6AuMo8-tN2P",
   },
   {
     ID: 4,
-    title: "THE KILLER (2023)",
+    title: "Spider man far from Home",
     description:
-      "Various interconnected stories of crime, redemption, and the bizarre.",
+      "Following the events of Avengers: Endgame, Spider-Man must step up to take on new threats in a world that has changed forever.",
     posterURL:
-      "https://resizing.flixster.com/IeY_hwUIozl0TboxoIjXVdBox5g=/fit-in/180x240/v2/https://resizing.flixster.com/Ux0YYpq25r4CNYj-TM2YhlcTYU8=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2I2Y2U1ZjNkLWQwNzEtNDFiNS1iZmYzLWQ5NWFmM2Y1OGMyNS5qcGc=",
+      "https://cdn.marvel.com/content/1x/spider-manfarfromhome_lob_crd_04_3.jpg",
     rating: 4,
+    trailer: "https://www.youtube.com/embed/Nt9L1jCKGnE?si=Elob0fL1qgTPcciP",
   },
   {
     ID: 5,
-    title: "FIVE NIGHTS AT FREDDY'S (2023)",
+    title: "Spider man: No way Home",
     description:
-      "Various interconnected stories of crime, redemption, and the bizarre.",
+      "Following the events of Avengers: Endgame, Spider-Man must step up to take on new threats in a world that has changed forever.",
     posterURL:
-      "https://resizing.flixster.com/RuMYrXBFVU8QqA54QBI5GyN3Fww=/fit-in/180x240/v2/https://resizing.flixster.com/NFhss816If2YlSBDd2154Z6-KHw=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2UyNTU5YzhjLTI4ODktNDg2Yy1hMmM0LWY0ZDM0Y2FkNjA3Yy5qcGc=",
+      "https://cdn.marvel.com/content/1x/spider-mannowayhome_lob_crd_03.jpg",
     rating: 5,
+    trailer: "https://www.youtube.com/embed/ZYzbalQ6Lg8?si=z3zl7i_jEAFu4tif",
   },
 ];

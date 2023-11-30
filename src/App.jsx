@@ -1,48 +1,24 @@
 // All the imports
-import { NavBar } from "./components/NavBar";
-import { MovieList } from "./components/MovieList";
-import { Filter } from "./components/Filter";
-import { AddMovie } from "./components/AddMovie";
-import { movies } from "./Movies";
-import { useMemo, useState } from "react";
+
+import { Route, Routes } from "react-router";
+import { MainLayout } from "./Layout/MainLayout";
+import { Home } from "./Pages/Home";
+import { Trailer } from "./Pages/Trailer";
 function App() {
-  // The state that collects all the movies
-  const [myMovies, setMyMovies] = useState(movies);
-
-  const [random, setRandom] = useState(0);
-
-  // let memorize the movies ina a useMemo Hook
-
-  const memorizedMovies = useMemo(() => {
-    return { myMemorizedMovies: myMovies };
-  }, [random]);
   return (
-    <div>
-      {/* Navbar of the app */}
-      <NavBar />
-      {/* Filter button */}
+    <>
+      {/* Rooutes */}
+      <Routes>
+        {/* Route to General Layout */}
+        <Route path="/" element={<MainLayout />}>
+          {/* wrapped route to home */}
+          <Route index element={<Home />} />
 
-      <section className="flex flex-col space-y-10 items-center">
-        <h2 className="main--title text-[#FFCC00] text-2xl md:text-5xl xl:text-6xl">
-          Movies you would Love
-        </h2>
-        <Filter setMyMovies={setMyMovies} memorizedMovies={memorizedMovies} />
-        <AddMovie
-          setMyMovies={setMyMovies}
-          setRandom={setRandom}
-          memorizedMovies={memorizedMovies}
-        />
-
-        {/* Condition to check if movie is true */}
-        {myMovies.length === 0 ? (
-          <div className="text-center py-24 text-3xl">
-            Searched movies did not return any result
-          </div>
-        ) : (
-          <MovieList myMovies={myMovies} />
-        )}
-      </section>
-    </div>
+          {/* Route to specific movie trailer */}
+          <Route path=":MovieId" element={<Trailer />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
